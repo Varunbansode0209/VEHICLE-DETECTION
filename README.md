@@ -101,6 +101,18 @@ python src/app.py --model rtdetr
 python src/app.py --model yolo11 --source assets/sample2.mp4
 ```
 
+**Run `sample2.mp4` with all three models**
+```bash
+# YOLO11 (fastest, best real-time throughput)
+python src/app.py --model yolo11 --source assets/sample2.mp4
+
+# YOLOv8 (balanced speed and accuracy)
+python src/app.py --model yolov8 --source assets/sample2.mp4
+
+# RT-DETR (highest accuracy, transformer-based)
+python src/app.py --model rtdetr --source assets/sample2.mp4
+```
+
 **Disable display or saving**
 ```bash
 python src/app.py --no-display

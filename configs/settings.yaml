@@ -1,0 +1,20 @@
+detection:
+  classes: [1, 2, 3, 5, 7]
+  confidence: 0.45
+  iou_threshold: 0.50
+  input_size: 640
+
+video:
+  source: "assets/sample_video.mp4"
+  save_output: true
+  output_path: "results/output.mp4"
+  display: true
+
+models:
+  yolo11: "yolo11n.pt"
+  yolov8: "yolov8n.pt"
+  rtdetr: "rtdetr-l.pt"
+
+counting:
+  position: 0.55
+  flash_frames: 8
